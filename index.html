@@ -72,8 +72,6 @@
   .wide .shot{aspect-ratio:3/2}
   .shot img{display:block;width:100%;height:100%;object-fit:cover}
   figcaption{font-size:15px;color:var(--soft);margin-top:8px}
-  /* placeholder tiles: delete once real photos are in */
-  .ph{display:grid;place-items:center;font:600 14px var(--sans);color:rgba(36,40,45,.4)}
 
   /* interests */
   .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -192,20 +190,16 @@
     <div class="wrap">
       <h2>Lately</h2>
       <p class="prose">I just got back from Iceland, where I spent fall break on Geological Filmmaking, a Vanderbilt travel course on filming the landscape and the geology that shaped it.</p>
-
-      <!-- To add a photo, replace <div class="shot ph" ...>Photo N</div> with
-           <div class="shot"><img src="photos/file.jpg" alt="What's in the photo" loading="lazy"></div> -->
       <div class="reel tall" data-reel>
         <div class="reel-bar">
           <button type="button" data-prev aria-label="Previous photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3L5 8l5 5"/></svg></button>
           <button type="button" data-next aria-label="Next photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3l5 5-5 5"/></svg></button>
         </div>
         <div class="track" tabindex="0" aria-label="Vertical photos">
-          <figure><div class="shot ph" style="background:#E7C9C3">Photo 1</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#EBD9AE">Photo 2</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#C3CFD9">Photo 3</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#C9D6C5">Photo 4</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#DCD6C6">Photo 5</div><figcaption>Caption</figcaption></figure>
+          <figure><div class="shot"><img src="photos/gorge-inside.jpg" alt="Looking up inside a gorge" loading="eager"></div><figcaption>Looking up inside a gorge</figcaption></figure>
+          <figure><div class="shot"><img src="photos/waterfall-top.jpg" alt="At the top of a waterfall" loading="eager"></div><figcaption>At the top of a waterfall</figcaption></figure>
+          <figure><div class="shot"><img src="photos/gorge-entrance.jpg" alt="The mouth of a gorge in the fog" loading="lazy"></div><figcaption>The mouth of a gorge in the fog</figcaption></figure>
+          <figure><div class="shot"><img src="photos/lava-field.jpg" alt="Suited up on a fresh lava field" loading="lazy"></div><figcaption>Suited up on a fresh lava field</figcaption></figure>
         </div>
       </div>
 
@@ -215,10 +209,18 @@
           <button type="button" data-next aria-label="Next photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3l5 5-5 5"/></svg></button>
         </div>
         <div class="track" tabindex="0" aria-label="Horizontal photos">
-          <figure><div class="shot ph" style="background:#C3CFD9">Photo 1</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#E7C9C3">Photo 2</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#C9D6C5">Photo 3</div><figcaption>Caption</figcaption></figure>
-          <figure><div class="shot ph" style="background:#EBD9AE">Photo 4</div><figcaption>Caption</figcaption></figure>
+          <figure><div class="shot"><img src="photos/lowlands.jpg" alt="Snow on the ridges above the lowlands" loading="eager"></div><figcaption>Snow on the ridges above the lowlands</figcaption></figure>
+          <figure><div class="shot"><img src="photos/sea-cliffs.jpg" alt="Sea cliffs at golden hour" loading="eager"></div><figcaption>Sea cliffs at golden hour</figcaption></figure>
+          <figure><div class="shot"><img src="photos/basalt-mountain.jpg" alt="Layers of old lava flows stacked into a mountain" loading="lazy"></div><figcaption>Layers of old lava flows stacked into a mountain</figcaption></figure>
+          <figure><div class="shot"><img src="photos/glacier-coast.jpg" alt="A glacier-capped volcano across the bay" loading="lazy"></div><figcaption>A glacier-capped volcano across the bay</figcaption></figure>
+          <figure><div class="shot"><img src="photos/glacier-lagoon.jpg" alt="At the foot of a glacier" loading="lazy"></div><figcaption>At the foot of a glacier</figcaption></figure>
+          <figure><div class="shot"><img src="photos/class-glacier.jpg" alt="The class at the glacier" loading="lazy"></div><figcaption>The class at the glacier</figcaption></figure>
+          <figure><div class="shot"><img src="photos/ramen.jpg" alt="Ramen with the class" loading="lazy"></div><figcaption>Ramen with the class</figcaption></figure>
+          <figure><div class="shot"><img src="photos/blue-water.jpg" alt="Milky blue water through mossy lava" loading="lazy"></div><figcaption>Milky blue water through mossy lava</figcaption></figure>
+          <figure><div class="shot"><img src="photos/moonrise.jpg" alt="Moonrise over the sea" loading="lazy"></div><figcaption>Moonrise over the sea</figcaption></figure>
+          <figure><div class="shot"><img src="photos/red-crater.jpg" alt="Red cinder on a lava field" loading="lazy"></div><figcaption>Red cinder on a lava field</figcaption></figure>
+          <figure><div class="shot"><img src="photos/church.jpg" alt="A black church in the fog" loading="lazy"></div><figcaption>A black church in the fog</figcaption></figure>
+          <figure><div class="shot"><img src="photos/gorge-group.jpg" alt="Inside the gorge with friends" loading="lazy"></div><figcaption>Inside the gorge with friends</figcaption></figure>
         </div>
       </div>
     </div>
