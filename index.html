@@ -74,18 +74,17 @@
 
   /* interests */
   .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .tile{border-radius:8px;padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;min-height:230px}
-  .tile svg{width:100%;height:84px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-  .tile h3{font:800 20px/1.15 var(--sans);letter-spacing:-.01em;margin-top:auto}
+  .tile{border-radius:8px;padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px}
+  .pic{display:flex;align-items:flex-end;gap:14px;height:84px}
+  .pic img{height:76px;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))}
+  .tile h3{font:800 20px/1.15 var(--sans);letter-spacing:-.01em;margin-top:8px}
   .tile p{font-size:16px;line-height:1.5;opacity:.88}
-  .t-f1{background:var(--red);color:var(--paper)}
+  .t-f1{background:var(--rice);color:var(--ink)}
   .t-vb{background:var(--gold);color:var(--ink)}
   .t-map{background:var(--sea);color:var(--paper)}
   .t-food{background:var(--matcha);color:var(--paper)}
-  .t-lang{background:var(--rice);color:var(--ink)}
-  .t-ai{background:var(--ink);color:var(--paper)}
-  .han{font:700 54px/1 var(--han);height:84px;display:flex;align-items:center;gap:14px}
-  .han span:first-child{color:var(--red)}
+  .t-lang{background:var(--ink);color:var(--paper)}
+  .t-ai{background:var(--red);color:var(--paper)}
 
   footer{padding:32px 0 56px;font-size:15px;color:var(--soft);border-top:1px solid var(--rule)}
 
@@ -221,32 +220,32 @@
       <h2>Outside of work</h2>
       <div class="tiles">
         <div class="tile t-f1">
-          <svg viewBox="0 0 220 84" aria-hidden="true"><path d="M30 70H150C175 70 184 60 184 46V38C184 26 196 22 204 14C210 6 206 -2 194 2L110 6C96 7 92 18 102 26L124 44C130 50 124 58 114 55L58 40C44 36 26 44 24 58C22 66 24 70 30 70Z" transform="translate(0 6)"/><path d="M64 68v10M70 68v10" stroke-width="1.6" transform="translate(0 2)"/></svg>
+          <div class="pic" aria-hidden="true"><img src="icons/f1.webp" alt="" width="242" height="96"></div>
           <h3>F1</h3>
           <p>Every race weekend, and too many opinions about tire strategy.</p>
         </div>
         <div class="tile t-vb">
-          <svg viewBox="0 0 220 84" aria-hidden="true"><circle cx="110" cy="42" r="36"/><path d="M110 42C110 24 101 12 88 8M110 42c16 9 30 7 36-3M110 42c-16 9-22 22-20 34"/></svg>
+          <div class="pic" aria-hidden="true"><img src="icons/volleyball.webp" alt="" width="96" height="96"></div>
           <h3>Volleyball</h3>
           <p>Playing whenever I can find a net and five other people.</p>
         </div>
         <div class="tile t-map">
-          <svg viewBox="0 0 220 84" aria-hidden="true"><ellipse cx="110" cy="62" rx="70" ry="14" opacity=".5"/><ellipse cx="110" cy="62" rx="42" ry="8" opacity=".75"/><path d="M110 62C110 62 88 38 88 24a22 22 0 0 1 44 0c0 14-22 38-22 38z"/><circle cx="110" cy="24" r="7"/></svg>
+          <div class="pic" aria-hidden="true"><img src="icons/map.webp" alt="" width="108" height="96"><img src="icons/camera.webp" alt="" width="117" height="96"></div>
           <h3>Maps and cameras</h3>
           <p>I walked my whole high school with a 360 camera and published it to Google Street View.</p>
         </div>
         <div class="tile t-food">
-          <svg viewBox="0 0 220 84" aria-hidden="true"><path d="M60 44h100c0 20-22 34-50 34S60 64 60 44z"/><path d="M98 80h24"/><path d="M128 40l46-34M136 42l46-30"/><path d="M90 34c-5-6 5-9 0-16M110 34c-5-6 5-9 0-16" stroke-width="1.8"/></svg>
+          <div class="pic" aria-hidden="true"><img src="icons/ramen.webp" alt="" width="89" height="96"></div>
           <h3>Asian food</h3>
           <p>Ramen, tofu, and street food, anywhere I travel.</p>
         </div>
         <div class="tile t-lang">
-          <div class="han" aria-hidden="true"><span>中</span><span>日</span></div>
+          <div class="pic" aria-hidden="true"><img src="icons/lantern.webp" alt="" width="61" height="96"></div>
           <h3>Mandarin and Japanese</h3>
           <p>Mandarin at home with my parents, and two years of Japanese, mostly thanks to anime.</p>
         </div>
         <div class="tile t-ai">
-          <svg viewBox="0 0 220 84" aria-hidden="true"><path d="M70 10h80a12 12 0 0 1 12 12v30a12 12 0 0 1-12 12H104L84 78V64H70a12 12 0 0 1-12-12V22a12 12 0 0 1 12-12z"/><path d="M84 37h6M107 37h6M130 37h6" stroke-width="3.4"/></svg>
+          <div class="pic" aria-hidden="true"><img src="icons/sparkles.webp" alt="" width="107" height="96"></div>
           <h3>Building with AI</h3>
           <p>Side projects, research tools, and this website, mostly built in conversation with Claude.</p>
         </div>
@@ -255,7 +254,7 @@
   </section>
 </main>
 
-<footer><div class="wrap">© 2026 Austin Liu</div></footer>
+<footer><div class="wrap">© 2026 Austin Liu · Icons from Microsoft Fluent Emoji (MIT)</div></footer>
 
 <script>
   document.querySelectorAll('[data-reel]').forEach(function(reel){
