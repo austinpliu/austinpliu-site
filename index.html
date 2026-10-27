@@ -38,6 +38,9 @@
   .about{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start}
   .about p{font-size:18px;margin-bottom:18px;max-width:600px}
   .about p:last-child{margin-bottom:0}
+  .side{display:flex;flex-direction:column;gap:20px}
+  .portrait{margin:0;border:1px solid var(--ink);padding:8px;background:var(--paper-deep)}
+  .portrait img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
   .facts{border:1px solid var(--ink)}
   .fact{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border-bottom:1px solid var(--grid)}
   .fact:last-child{border-bottom:none}
@@ -110,12 +113,15 @@
       <p>I'm a junior at Vanderbilt studying Economics and Political Science with a minor in Data Science. My work sits where markets, technology, and regulation meet: how decentralized finance actually behaves under stress, how digital assets get custodied and secured, and how U.S. legislation is redrawing the lines around all of it.</p>
       <p>I write research for crypto firms, help build the communities around them, and organize students on digital asset policy.</p>
     </div>
+    <div class="side">
+    <figure class="portrait"><img src="headshot.jpg" alt="Austin Liu" width="600" height="600"></figure>
     <div class="facts">
       <div class="fact"><span class="k">School</span><span class="v">Vanderbilt University</span></div>
       <div class="fact"><span class="k">Degrees</span><span class="v">B.S. Economics<br>B.A. Political Science</span></div>
       <div class="fact"><span class="k">Minor</span><span class="v">Data Science</span></div>
       <div class="fact"><span class="k">Graduating</span><span class="v">May 2028</span></div>
       <div class="fact"><span class="k">Languages</span><span class="v">English, Mandarin</span></div>
+    </div>
     </div>
   </div>
   <div class="pagenum">01</div>
