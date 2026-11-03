@@ -23,6 +23,18 @@ REGIONS = [
     ('socal',      'The San Gabriel Mountains, California',   34.2, -117.7,   800, .62, 1.1),
     ('altiplano',  'Lake Titicaca and the Altiplano, Andes',  -16.0, -69.3,  1300, .62, 1.3),
     ('newzealand', 'The Southern Alps, New Zealand',         -43.6,  171.0,  1500, .55, 1.2),
+    ('sicily',     'Mount Etna and Sicily, Italy',            37.6,   14.2,   700, .60, 1.0),
+    ('srilanka',   'The Central Highlands, Sri Lanka',         7.7,   80.7,  1500, .64, 1.0),
+    ('korea',      'The Korean Peninsula',                    37.5,  127.8,  1500, .60, 1.2),
+    ('kamchatka',  'The volcanoes of Kamchatka, Russia',      55.5,  159.5,  1300, .60, 1.2),
+    ('patagonia',  'Torres del Paine and Patagonia, Chile',  -50.0,  -73.5,  1100, .58, 1.2),
+    ('cascades',   'Mount Rainier and Puget Sound, Washington', 46.9, -121.8,  700, .62, 1.1),
+    ('sierra',     'Yosemite and the Sierra Nevada, California', 37.7, -119.5, 900, .62, 1.1),
+    ('pyrenees',   'The Pyrenees, France and Spain',          42.7,    0.8,   900, .55, 1.4),
+    ('caucasus',   'The Caucasus, between two seas',          42.5,   44.5,  1500, .52, 1.4),
+    ('canaries',   'Mount Teide and the Canary Islands',      28.3,  -16.0,   700, .60, 1.0),
+    ('hokkaido',   'Hokkaido, Japan',                         43.3,  142.8,   800, .62, 1.0),
+    ('tasmania',   'Tasmania, Australia',                    -42.0,  146.6,   700, .62, 1.0),
 ]
 
 def nice(x):
